@@ -1,0 +1,14 @@
+﻿<Window x:Class="MakerspaceSchedulerProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MakerspaceSchedulerProject"
+        mc:Ignorable="d"
+        Title="Makerspace Scheduler" Height="313.744" Width="600.299">
+    <Grid>
+        <Button x:Name="ScheduleButton" Content="Create Schedule&#xD;&#xA;" HorizontalAlignment="Center" Height="44" Margin="0,0,0,50" VerticalAlignment="Bottom" Width="200" FontWeight="Bold" FontSize="20" TextOptions.TextHintingMode="Fixed"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Center" Margin="0,30,0,0" TextWrapping="Wrap" Text="Welcome to the Longhorn Makerspace Scheduling Application." VerticalAlignment="Top" Height="82" Width="499" FontSize="16" TextAlignment="Center"/>
+        <ComboBox x:Name="EmployeeSelector" HorizontalAlignment="Left" Margin="197,139,0,0" VerticalAlignment="Top" Width="200" IsEditable="True" Text="Add or Select Employee to Edit"/>
+    </Grid>
+</Window>
