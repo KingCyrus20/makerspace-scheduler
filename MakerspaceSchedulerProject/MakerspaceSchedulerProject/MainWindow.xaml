@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="Makerspace Scheduler" Height="313.744" Width="600.299">
     <Grid>
-        <Button x:Name="ScheduleButton" Content="Create Schedule&#xD;&#xA;" HorizontalAlignment="Center" Height="44" Margin="0,0,0,50" VerticalAlignment="Bottom" Width="200" FontWeight="Bold" FontSize="20" TextOptions.TextHintingMode="Fixed"/>
+        <Button x:Name="ScheduleButton" Content="Create Schedule&#xA;" HorizontalAlignment="Center" Height="35" Margin="197,0,196.333,58.667" VerticalAlignment="Bottom" Width="200" FontWeight="Bold" FontSize="20" TextOptions.TextHintingMode="Fixed"/>
         <TextBlock x:Name="TextBlock1" HorizontalAlignment="Center" Margin="0,30,0,0" TextWrapping="Wrap" Text="Welcome to the Longhorn Makerspace Scheduling Application." VerticalAlignment="Top" Height="82" Width="499" FontSize="16" TextAlignment="Center"/>
-        <ComboBox x:Name="EmployeeSelector" HorizontalAlignment="Left" Margin="197,139,0,0" VerticalAlignment="Top" Width="200" IsEditable="True" Text="Add or Select Employee to Edit"/>
+        <ComboBox x:Name="EmployeeSelector" HorizontalAlignment="Left" Margin="78,135,0,0" VerticalAlignment="Top" Width="200" IsEditable="True" Text="Add or Select Employee to Edit"/>
+        <Button x:Name="AddEmployee" Content="Add" HorizontalAlignment="Left" Margin="311,136,0,0" VerticalAlignment="Top" Width="75" Click="AddButton_Click"/>
+        <Button x:Name="RemoveEmployee" Content="Remove" HorizontalAlignment="Left" Margin="402,136,0,0" VerticalAlignment="Top" Width="75" Click="RemoveButton_Click"/>
     </Grid>
 </Window>
