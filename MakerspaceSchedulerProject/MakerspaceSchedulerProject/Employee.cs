@@ -9,6 +9,7 @@ namespace MakerspaceSchedulerProject
     public class Employee
     {
         public String Name;
+        public List<Employee> HatedEmployees;
         public Employee(string name)
         {
             Name = name;
