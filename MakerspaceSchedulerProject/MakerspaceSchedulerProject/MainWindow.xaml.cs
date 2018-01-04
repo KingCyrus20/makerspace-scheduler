@@ -29,9 +29,24 @@ namespace MakerspaceSchedulerProject
             EmployeeSelector.ItemsSource = employeeList;
         }
 
+        private bool employeeExists(String name)
+        {
+            if (employeeList.Count() > 0)
+            {
+                foreach (Employee emp in employeeList)
+                {
+                    if (emp.Name.Equals(name))
+                        return true;
+                }
+                return false;
+            }
+            return false;
+        }
+
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
             employeeList.Add(new Employee(EmployeeSelector.Text));
+            MessageBoxResult employeeAdded = MessageBox.Show("Employee Added.");
         }
 
         private void RemoveButton_Click(object sender, RoutedEventArgs e)
@@ -43,9 +58,24 @@ namespace MakerspaceSchedulerProject
                     if (emp.Name.Equals(EmployeeSelector.Text))
                     {
                         employeeList.Remove(emp);
-                        break;
+                        MessageBoxResult employeeRemoved = MessageBox.Show("Employee Removed.");
+                        break;                        
                     }
                 }
+            }
+        }
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (employeeExists(EmployeeSelector.Text))
+            {
+                EmployeeEditor currentEmployee = new EmployeeEditor();
+                currentEmployee.Text = EmployeeSelector.Text;
+                currentEmployee.ShowDialog();
+            }
+            else
+            {
+                MessageBoxResult editError = MessageBox.Show("Employee does not exist.");
             }
         }
     }

@@ -12,5 +12,6 @@
         <ComboBox x:Name="EmployeeSelector" HorizontalAlignment="Left" Margin="78,135,0,0" VerticalAlignment="Top" Width="200" IsEditable="True" Text="Add or Select Employee to Edit"/>
         <Button x:Name="AddEmployee" Content="Add" HorizontalAlignment="Left" Margin="311,136,0,0" VerticalAlignment="Top" Width="75" Click="AddButton_Click"/>
         <Button x:Name="RemoveEmployee" Content="Remove" HorizontalAlignment="Left" Margin="402,136,0,0" VerticalAlignment="Top" Width="75" Click="RemoveButton_Click"/>
+        <Button x:Name="EditEmployee" Content="Edit" HorizontalAlignment="Left" Margin="494,136,0,0" VerticalAlignment="Top" Width="75" Click="EditButton_Click"/>
     </Grid>
 </Window>
