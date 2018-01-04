@@ -2,14 +2,14 @@
 #  'Availability' is filled with boolean values for each half-hour segment
 #  Starts at Sunday at midnight
 
-def createAvailabilityList(hours, days):
+def createAvailabilityList(days, hours):
 	a = []
-	for hour in range(hours):
-		a += [[0] * days]
+	for day in range(days):
+		a += [[0] * hours]
 	return a
 
 hours = 48
 days = 7
 
-a = createAvailabilityList(hours, days)
+a = createAvailabilityList(days, hours)
 print("	a=", a)
